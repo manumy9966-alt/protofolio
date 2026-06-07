@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kokkanti Manoj Kumar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:100%;
+height:100%;
+background:linear-gradient(
+45deg,
+#06b6d4,
+#3b82f6,
+#8b5cf6,
+#ec4899
+);
+background-size:400% 400%;
+animation:gradient 15s ease infinite;
+opacity:.15;
+z-index:-1;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+nav{
+position:sticky;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+backdrop-filter:blur(15px);
+background:rgba(255,255,255,.05);
+z-index:1000;
+}
+
+.logo{
+font-size:1.8rem;
+font-weight:700;
+background:linear-gradient(90deg,#06b6d4,#8b5cf6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+section{
+padding:90px 8%;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:4rem;
+background:linear-gradient(90deg,#06b6d4,#8b5cf6,#ec4899);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero h3{
+margin-top:15px;
+font-weight:400;
+}
+
+.hero p{
+margin-top:20px;
+max-width:800px;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+border-radius:50px;
+text-decoration:none;
+color:white;
+font-weight:600;
+background:linear-gradient(90deg,#06b6d4,#8b5cf6);
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.glass{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:20px;
+padding:30px;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+}
+
+.skills-grid,
+.projects,
+.certifications{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.skill{
+margin-bottom:20px;
+}
+
+.progress{
+height:10px;
+background:#1e293b;
+border-radius:20px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.progress span{
+display:block;
+height:100%;
+background:linear-gradient(90deg,#06b6d4,#8b5cf6);
+}
+
+.timeline{
+border-left:3px solid #06b6d4;
+padding-left:30px;
+}
+
+.timeline-item{
+margin-bottom:35px;
+}
+
+ul{
+padding-left:20px;
+}
+
+li{
+margin-bottom:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#06b6d4;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Manoj Kumar</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Kokkanti Manoj Kumar</h1>
+
+<h3>
+Software Engineer • Full Stack Developer • Data Analyst • AI Graduate
+</h3>
+
+<p>
+Results-driven B.Tech Computer Science (Artificial Intelligence)
+graduate with hands-on experience in Full Stack Development,
+REST APIs, NLP, Machine Learning and Data Analytics.
+Proficient in Python, Django, Flask, SQL and JavaScript.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="glass">
+
+<p>
+B.Tech CSE (Artificial Intelligence) graduate with 80% academic score.
+Experienced in Python, Flask, Django, REST APIs, SQL, Machine Learning,
+NLP, Scikit-Learn, NLTK and Data Analytics. Passionate about building
+scalable software solutions and solving real-world problems through AI.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="glass">
+
+<div class="skill">
+Python
+<div class="progress"><span style="width:90%"></span></div>
+</div>
+
+<div class="skill">
+JavaScript
+<div class="progress"><span style="width:80%"></span></div>
+</div>
+
+<div class="skill">
+Django
+<div class="progress"><span style="width:85%"></span></div>
+</div>
+
+<div class="skill">
+Flask
+<div class="progress"><span style="width:85%"></span></div>
+</div>
+
+<div class="skill">
+SQL
+<div class="progress"><span style="width:85%"></span></div>
+</div>
+
+<div class="skill">
+Machine Learning & NLP
+<div class="progress"><span style="width:75%"></span></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Doctor Appointment System</h3>
+<p>
+Full-stack appointment platform supporting patient registration,
+doctor scheduling and real-time slot booking.
+Built using Flask/Django, MySQL, HTML, CSS and JavaScript.
+</p>
+</div>
+
+<div class="card">
+<h3>Political Tweet Sentiment Analysis</h3>
+<p>
+Processed 10,000+ tweets using NLP techniques.
+Implemented Naive Bayes, Logistic Regression and SVM models
+for sentiment classification.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="section-title">Education</h2>
+
+<div class="glass timeline">
+
+<div class="timeline-item">
+<h3>B.Tech CSE (Artificial Intelligence)</h3>
+<p>MJR College of Engineering & Technology</p>
+<p>2021 - 2025 | 80%</p>
+</div>
+
+<div class="timeline-item">
+<h3>Intermediate (MPC)</h3>
+<p>B.S.R Junior College, Tirupati</p>
+<p>2019 - 2021 | 78.4%</p>
+</div>
+
+<div class="timeline-item">
+<h3>SSC</h3>
+<p>Z.P High School, Sadam</p>
+<p>2018 - 2019 | 88%</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="certifications">
+
+<h2 class="section-title">Certifications</h2>
+
+<div class="certifications">
+
+<div class="card">
+Python Certification<br>
+Webvoid Technologies
+</div>
+
+<div class="card">
+Data Analysis Certification<br>
+TATA Forage
+</div>
+
+<div class="card">
+Python Course Certification<br>
+Skilldrizer
+</div>
+
+<div class="card">
+NCC B-Certificate
+</div>
+
+<div class="card">
+NPTEL Online Course
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Areas of Interest</h2>
+
+<div class="glass">
+
+<ul>
+<li>Software Engineering</li>
+<li>Backend Development</li>
+<li>Frontend Development</li>
+<li>Full Stack Development</li>
+<li>Data Analytics</li>
+<li>Data Science</li>
+<li>Artificial Intelligence</li>
+<li>Machine Learning</li>
+<li>Natural Language Processing</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Soft Skills</h2>
+
+<div class="glass">
+
+<ul>
+<li>Analytical Thinking</li>
+<li>Problem Solving</li>
+<li>Communication Skills</li>
+<li>Team Collaboration</li>
+<li>Self Learning</li>
+<li>Adaptability</li>
+<li>Time Management</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="glass contact">
+
+<h3>Kokkanti Manoj Kumar</h3>
+
+<p>📞 +91 7981848451</p>
+
+<p>📧 manumy9966@gmail.com</p>
+
+<p>
+🔗 LinkedIn:
+<a href="https://linkedin.com/in/kokkanti-manoj" target="_blank">
+linkedin.com/in/kokkanti-manoj
+</a>
+</p>
+
+<p>
+💻 GitHub:
+<a href="https://github.com/manumy9966-alt" target="_blank">
+github.com/manumy9966-alt
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Kokkanti Manoj Kumar</h3>
+
+<p>
+Software Engineer • Full Stack Developer • Data Analyst • AI Graduate
+</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>
